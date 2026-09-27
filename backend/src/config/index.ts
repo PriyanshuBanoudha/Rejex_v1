@@ -1,0 +1,16 @@
+export const config = {
+  PORT: parseInt(process.env.PORT || '5000'),
+  MONGODB_URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/hackathon_platform',
+  NODE_ENV: process.env.NODE_ENV || 'development',
+  JWT_SECRET: process.env.JWT_SECRET || 'hackathon-raptors-jwt-secret-dev-2026',
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '7d',
+  JWT_REFRESH_EXPIRES_IN: process.env.JWT_REFRESH_EXPIRES_IN || '30d',
+  SESSION_SECRET: process.env.SESSION_SECRET || 'hackathon-raptors-session-secret-dev',
+  UPLOAD_DIR: process.env.UPLOAD_DIR || '/tmp/uploads',
+  RATE_LIMIT_WINDOW_MS: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '60000'),
+  RATE_LIMIT_MAX: parseInt(process.env.RATE_LIMIT_MAX || '100'),
+  VOTE_RATE_LIMIT_MAX: parseInt(process.env.VOTE_RATE_LIMIT_MAX || '20'),
+  CERT_PRIVATE_KEY_PATH: process.env.CERT_PRIVATE_KEY_PATH || '/app/keys/private.pem',
+  CERT_PUBLIC_KEY_PATH: process.env.CERT_PUBLIC_KEY_PATH || '/app/keys/public.pem',
+  WEBHOOK_TIMEOUT_MS: parseInt(process.env.WEBHOOK_TIMEOUT_MS || '5000'),
+} as const;

@@ -1,0 +1,44 @@
+# ─── Node.js ───────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Build Outputs ─────────────────────────────────────────
+dist/
+build/
+frontend/dist/
+backend/dist/
+
+# ─── Environment Variables ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# ─── OS Files ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs ──────────────────────────────────────────────────
+logs/
+*.log
+compile-log.txt
+tsc-errors.txt
+errors.txt
+
+# ─── IDE / Editor ──────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ─── Docker ────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ─── Test Coverage ─────────────────────────────────────────
+coverage/
+.nyc_output/
