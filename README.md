@@ -48,7 +48,7 @@ The fastest way. Requires only [Docker Desktop](https://www.docker.com/products/
 
 ```bash
 # Start all services (MongoDB + Express API + React UI) in one command
-    npm run docker:up
+npm run docker:up
 ```
 
 | Service       | URL                                          |
